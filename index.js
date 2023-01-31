@@ -11,3 +11,8 @@ function getResult(){
 function clearField(){
     inputEl.value = ""
 }
+function deletOne(){
+    const inputArr = inputEl.value.split("")
+    inputArr.pop()
+    inputEl.value = inputArr.join('')
+}
