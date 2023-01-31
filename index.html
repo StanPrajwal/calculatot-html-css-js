@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator-container">
+        
+        <table class="table">
+            <caption>Calculator</caption>
+            <tr>
+                <td colspan="3">
+                    <input id="input"/>
+                </td>
+                <td id="clear-btn" onclick="clearField()">C</td>
+            </tr>
+            <tr>
+                <td class="input-btn" onclick="getInput('1')">1</td>
+                <td class="input-btn" onclick="getInput('2')">2</td>
+                <td class="input-btn" onclick="getInput('3')">3</td>
+                <td class="input-btn" onclick="getInput('/')">/</td>
+            </tr>
+            <tr>
+                <td class="input-btn" onclick="getInput('4')">4</td>
+                <td class="input-btn" onclick="getInput('5')">5</td>
+                <td class="input-btn" onclick="getInput('6')">6</td>
+                <td class="input-btn" onclick="getInput('-')">-</td>
+            </tr>
+            <tr>
+                <td class="input-btn" onclick="getInput('7')">7</td>
+                <td class="input-btn" onclick="getInput('8')">8</td>
+                <td class="input-btn" onclick="getInput('9')">9</td>
+                <td class="input-btn" onclick="getInput('+')">+</td>
+            </tr>
+            <tr>
+                <td class="input-btn" onclick="getInput('.')">.</td>
+                <td class="input-btn"onclick="getInput('0')">0</td>
+                <td class="equal" onclick="getResult()">=</td>
+                <td class="input-btn" onclick="getInput('*')">*</td>
+            </tr>
+        </table>
+       
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
